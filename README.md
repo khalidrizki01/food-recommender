@@ -9,21 +9,36 @@ Route yang tersedia:
 
 Contoh request body request: 
 {
+
     "_id" : "648573c85d03c2e375114fc7",
+    
     "name": "Joshua Adams",
+    
     "spiceLevel": "A little bit spicy",
+    
     "likedIngredients": ["beef","pepperoni", "chicken", "tomatoes", "sauce", "peppers", "mushroom"]
+    
 }
 
 Contoh return:
 {
+
     "uid": "648573c85d03c2e375114fc7",
+    
     "recommendation": [
+    
         "648573435d03c2e375114fba",
+        
         "648573455d03c2e375114fc3",
+        
         "648573435d03c2e375114fb9",
+        
         "648573445d03c2e375114fbe",
+        
         "648573445d03c2e375114fbf",
+        
         "648573425d03c2e375114fb7"
+        
     ]
+    
 }
