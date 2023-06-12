@@ -5,4 +5,4 @@ Inbound port: 8000 (FastAPI)
 
 Route yang tersedia:
 
-'/predict' (POST): uid dan list food_id hasil rekomendasi
+'/predict' (POST): menerima data user (terutama field "spiceLevel" dan "likedIngredients") dan mengembalikan uid dan list food_id hasil rekomendasi
