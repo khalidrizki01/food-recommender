@@ -9,50 +9,50 @@ Route yang tersedia:
 
 
 # Development Setup
-
-## Setting Up Project
 Buka terminal dan ubah direktori tempat dimana ingin meng-git clone repository ini
 
-### Clone into your local directory with 
+## Clone into your local directory with 
 ```
 git clone https://github.com/khalidrizki01/food-recommender.git
 cd food-recommender
 ```
 
-### Buat dan aktifkan virtual environment
-#### Apabila menggunakan conda
+## Buat dan aktifkan virtual environment
+Ada dua pilihan dalam membuat virtual environment, yakni dengan conda atau dengan venv
+### Apabila menggunakan conda
 ```
 conda create --name food-recommender
 conda activate food-recommender
 ```
-#### Apabila menggunakan venv
+### Apabila menggunakan venv
 ```
 python -m venv food-recommender-env
 ```
-##### Apabila menggunakan Windows, aktifkan dengan
+Dengan venv, ada dua cara untuk mengaktifkan environment, yakni jika menggunakan Windows atau dengan Mac/Linux
+#### Apabila menggunakan Windows, aktifkan dengan
 ```
 food-recommender-env\Scripts\activate
 ```
-##### Apabila menggunakan Mac/Linux, aktifkan dengan
+#### Apabila menggunakan Mac/Linux, aktifkan dengan
 ```
 source food-recommender-env/bin/activate
 ```
 
-### Install package yang diperlukan dari requirements.txt
+## Install package yang diperlukan dari requirements.txt
 ```
 pip install -r requirements.txt
 ```
 
-### Mengatur .env File
+## Mengatur .env File
 Ubah nama file `.env.temp` menjadi `.env`.
 Buka file `.env` dan isikan URL koneksi mongoDB yang sesuai
 
-### Jalankan development server
+## Jalankan development server
 ```
 python main.py
 ```
 
-### Mengakses API
+## Mengakses API
 API akan tersedia di `http://localhost:8000` . Request bisa dikirimkan ke endpoint `/predict`
 
 Contoh body request: 
