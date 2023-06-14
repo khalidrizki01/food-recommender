@@ -20,7 +20,7 @@ async def predict(request: Request):
         
         menu_ids, menu_vecs, user_vecs = preprocess(menu_df, user_df)
 
-        model = tf.keras.models.load_model('./model')
+        model = tf.keras.models.load_model('./modelv2')
 
         predictions = model.predict([user_vecs, menu_vecs])
 

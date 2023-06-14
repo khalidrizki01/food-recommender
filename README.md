@@ -14,7 +14,7 @@ Buka terminal dan ubah direktori tempat dimana ingin meng-git clone repository i
 ## Clone into your local directory with 
 ```
 git clone https://github.com/khalidrizki01/food-recommender.git
-cd food-recommender
+cd food-recommender/api
 ```
 
 ## Buat dan aktifkan virtual environment
@@ -40,7 +40,7 @@ source food-recommender-env/bin/activate
 
 ## Install package yang diperlukan dari requirements.txt
 ```
-pip install -r requirements.txt
+pip install -r ../requirements.txt
 ```
 
 ## Mengatur .env File
@@ -77,17 +77,12 @@ Contoh return:
     
     "recommendation": [
     
+        "648573425d03c2e375114fb7",
         "648573435d03c2e375114fba",
-        
-        "648573455d03c2e375114fc3",
-        
         "648573435d03c2e375114fb9",
-        
-        "648573445d03c2e375114fbe",
-        
-        "648573445d03c2e375114fbf",
-        
-        "648573425d03c2e375114fb7"
+        "648573445d03c2e375114fc1",
+        "648573445d03c2e375114fc0",
+        "648573445d03c2e375114fbe"
     ]
 }
 ```
