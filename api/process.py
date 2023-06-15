@@ -146,8 +146,6 @@ def parse_user_data(user):
 
 def encode_spice_level(menu_df, user_df):
   scaler = MinMaxScaler(feature_range=(0, 1))
-  menu_df['Spice Level'] = menu_df['Spice Level'].replace({'Mild':0, 'A little bit spicy':1, 'Spicy':2, 'Extra spicy':3})
-  user_df['Spice Level'] = user_df['Spice Level'].replace({'Mild':0, 'A little bit spicy':1, 'Spicy':2, 'Extra spicy':3})
   menu_df['Spice Level'] = scaler.fit_transform(menu_df[['Spice Level']])
   user_df['Spice Level'] = scaler.transform(user_df[['Spice Level']])
 
